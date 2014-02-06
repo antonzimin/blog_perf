@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  database: blog_dev
+  password: password
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: mysql
+  database: blog_test
+  password: password
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: mysql
+  database: blog_production
+  password: password
+  pool: 5
+  timeout: 5000
