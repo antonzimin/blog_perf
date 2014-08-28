@@ -29,7 +29,11 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     arel (3.0.3)
+    autoprefixer-rails (3.0.1.20140826)
+      execjs
     bcrypt-ruby (3.1.2)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.0.4)
     coderay (1.1.0)
     coffee-rails (3.2.2)
@@ -112,12 +116,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bcrypt-ruby
+  bootstrap-sass (~> 3.2.0)
   coffee-rails (~> 3.2.1)
   haml
   jquery-rails
   mysql
   pry
   rails (= 3.2.15)
-  sass-rails (~> 3.2.3)
+  sass-rails (>= 3.2)
   uglifier (>= 1.0.3)

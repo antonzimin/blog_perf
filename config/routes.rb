@@ -5,4 +5,5 @@ BlogPerf::Application.routes.draw do
   root :to => "users#new"
   resources :users
   resources :user_sessions
+  resources :home
 end
