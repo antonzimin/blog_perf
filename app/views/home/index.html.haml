@@ -1,7 +1,14 @@
-%ul.nav.nav-tabs
+%ul.nav.nav-tabs{ role: 'tablist' }
   %li.active
-    = link_to 'BLoGS', 'javascript: void(0);'
+    = link_to 'BLoGS', '#blogs', { role: 'tab', data: { toggle: 'tab' } }
   %li
-    = link_to 'Messages', 'javascript: void(0);'
-  %li.disabled
-    = link_to 'Subscriptions', 'javascript: void(0);'
+    = link_to 'Messages', '#messages', { role: 'tab', data: { toggle: 'tab' } }
+  %li
+    = link_to 'Settings', '#settings', { role: 'tab', data: { toggle: 'tab' } }
+.tab-content
+  .tab-pane.active#blogs
+    = render 'blogs', locals: { blogs: @blogs }
+  .tab-pane#messages
+    = render 'messages', locals: { messages: @messages }
+  .tab-pane#settings
+    = render 'settings', locals: { settings: @settings }
